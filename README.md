@@ -17,4 +17,4 @@ Activity Heatmaps: Visualize chat activity patterns
 
 Support: Both individual and group chat analysis
 
-try:- https://whatsapp-chat-analysis-fgw2ujdygqkyyiknuxmrjo.streamlit.app/
+try:- https://whatsapp-chat-analysis-fgw2ujdygqkyyiknuxmrjo.streamlit.app/?embed_options=show_toolbar,show_padding,show_footer,dark_theme,light_theme,show_colored_line
