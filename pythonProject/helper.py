@@ -45,7 +45,8 @@ def create_word_cloud(user,df):
     return df_wc
 
 def most_common_words(user,df):
-    f = open('stop_hinglish.txt','r')
+    file_path = os.path.join(os.path.dirname(__file__), "stop_hinglish.txt")
+    f = open(file_path,'r')
     stop_words = f.read()
     if user != 'overall':
         df = df[df['Sender']==user]
