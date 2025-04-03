@@ -1,6 +1,7 @@
 from wordcloud import WordCloud
 import pandas as pd
 import emoji
+import os
 from collections import Counter
 def fetch_stats(user,df):
     if user != 'overall':
@@ -24,7 +25,9 @@ def fetch_most_active_users(df):
     return x,pc
 
 def create_word_cloud(user,df):
-    f = open("stop_hinglish.txt","r")
+    
+    file_path = os.path.join(os.path.dirname(__file__), "stop_hinglish.txt")
+    f = open(file_path, "r")
     stop_words = f.read()
     if user != 'overall':
         df = df[df['Sender']==user]
